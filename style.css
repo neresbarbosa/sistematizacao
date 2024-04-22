@@ -1,0 +1,254 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+head{
+  font-family: Arial, Helvetica, sans-serif;
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    
+    
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #f7df1e;
+}
+
+/* Estilos para o banner */
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+.banner-content {
+    max-width: 800px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de serviços */
+.services {
+    padding: 20px 0;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.service-item {
+    margin-bottom: 30px;
+    
+}
+
+.service-item img {
+    
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Estilos para a seção "Por que escolher a Clínica Alfa?" */
+.why-choose-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.why-choose-us ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a seção de contato */
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.contact ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.footer-social {
+    list-style: none;
+    display: flex;
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-item a:hover {
+    color: #f7df1e;
+}
